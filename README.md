@@ -9,7 +9,7 @@ This directory contains the skills, scripts, templates, and configuration needed
 **Recommended — using the [skills CLI](https://github.com/vercel-labs/skills)** (works with Claude Code, OpenCode, Cursor, and 55+ agents):
 
 ```bash
-npx skills add lnds/elp
+npx skills add semoac/elp-me
 ```
 
 The CLI will let you choose which agent(s) to install to and whether to symlink or copy the files.
@@ -166,7 +166,7 @@ After running Phase 1, edit `docs/elp-config.json` in your project to customize:
 
 ### skills CLI (recommended)
 
-This repo follows the [Agent Skills open standard](https://agentskills.io) and is discoverable by the [vercel-labs/skills](https://github.com/vercel-labs/skills) CLI. Running `npx skills add lnds/elp` handles path resolution for any supported agent automatically.
+This repo follows the [Agent Skills open standard](https://agentskills.io) and is discoverable by the [vercel-labs/skills](https://github.com/vercel-labs/skills) CLI. Running `npx skills add semoac/elp-me` handles path resolution for any supported agent automatically.
 
 ### Agent feature matrix
 
@@ -182,7 +182,7 @@ These skills use several **Claude Code-specific extensions** that are silently i
 | `exec claude` in launch script | ✅ | ❌ needs `exec opencode` | ❌ needs agent CLI |
 
 **Using with OpenCode or other agents:**
-1. Install via `npx skills add lnds/elp` and select your agent — paths are resolved automatically
+1. Install via `npx skills add semoac/elp-me` and select your agent — paths are resolved automatically
 2. Replace `${CLAUDE_SKILL_DIR}/templates/...` references in SKILL.md files with the resolved install path
 3. Change `exec claude` to your agent's CLI command in `elp-phase3-lane/scripts/elp-launch.sh`
 4. Accept that `disable-model-invocation`, `allowed-tools`, and `argument-hint` are no-ops
