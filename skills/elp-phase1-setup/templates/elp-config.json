@@ -1,0 +1,44 @@
+{
+  "project": {
+    "name": "",
+    "description": ""
+  },
+  "git": {
+    "repo_url": "",
+    "default_branch": "main",
+    "worktree_base_dir": "~/work",
+    "remote_name": "origin"
+  },
+  "github": {
+    "owner": "",
+    "repo": "",
+    "labels": {
+      "lane": "elp-lane",
+      "audit": "elp-audit",
+      "retro": "elp-retro",
+      "bug": "bug",
+      "feature": "feature"
+    }
+  },
+  "agent": {
+    "subagent_model": "haiku",
+    "autonomous_mode": true,
+    "stop_and_report": true
+  },
+  "elp": {
+    "tmux_prefix": "elp",
+    "brief_dir": "/tmp",
+    "launch_script_dir": "/tmp",
+    "tsv_dir": "/tmp",
+    "retros_dir": "docs/lane-experiences",
+    "audits_dir": "docs/phase0-audits",
+    "honesty_targets_dir": "docs/honesty-targets",
+    "principles_file": "docs/principles.md",
+    "vision_file": "docs/vision.md",
+    "design_file": "docs/design.md",
+    "glossary_file": "docs/glossary.md",
+    "conventional_commits": true,
+    "auto_merge_on_green": true,
+    "required_local_checks": ["test", "lint"]
+  }
+}
